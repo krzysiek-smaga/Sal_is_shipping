@@ -8,8 +8,7 @@ def cost_of_ground_shipping(weight):
     price_per_pound = 4
   else:
     price_per_pound = 4.75
-  cost = weight * price_per_pound + flat_charge
-  return cost
+  return weight * price_per_pound + flat_charge
 
 # Test cost_of_ground_shipping function
 print(cost_of_ground_shipping(8.4))
@@ -24,9 +23,8 @@ def cost_of_drone_shipping(weight):
   elif 6 < weight <= 10:
     price_per_pound = 12
   else:
-    price_per_pound = 14.25
-  cost = weight * price_per_pound
-  return cost
+    price_per_pound = 14.25 
+  return weight * price_per_pound
 
 # Test cost_of_drone_shipping function
 print(cost_of_drone_shipping(1.5))
